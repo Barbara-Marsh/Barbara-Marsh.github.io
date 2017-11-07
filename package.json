@@ -1,0 +1,7 @@
+{
+  "name": "Barbara-Marsh.github.io",
+  "version": "0.0.1",
+  "dependencies": {
+    "less": "^2.7.2"
+  }
+}
