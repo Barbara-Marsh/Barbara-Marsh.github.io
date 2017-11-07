@@ -35,6 +35,9 @@ html body .container .link-image {
   margin: 0 0 10px 0;
   width: 100%;
 }
+html body .container .main {
+  margin: 10px 0 0 0;
+}
 html body .footer {
   position: absolute;
   bottom: 0;
