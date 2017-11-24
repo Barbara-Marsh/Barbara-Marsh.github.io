@@ -6,8 +6,8 @@ var app = angular.module('myApp', ['ngRoute']);
 
 app.config(function ($routeProvider) {
     $routeProvider
-        .when('/', { templateUrl: 'templates/home.html' })
-        .when('/about', { templateUrl: 'templates/about.html' })
+        .when('/', { templateUrl: 'assets/templates/home.html' })
+        .when('/about', { templateUrl: 'assets/templates/about.html' })
         .otherwise({ redirectTo: "/" });
 })
     .controller('AppCtrl', function ($scope) {
