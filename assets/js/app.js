@@ -1,9 +1,26 @@
 /**
- * Created by Barbara on 11/04/2017.
+ * Created by Barbara Marsh on 11/04/2017.
  */
 
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ngRoute']);
 
-app.controller('AppCtrl', function ($scope) {
-    $scope.date = new Date();
-});
+app.config(function ($routeProvider) {
+    $routeProvider
+        .when('/', {
+            templateUrl: 'templates/home.html',
+            controller: 'homeController'
+        })
+        .when('/about', {
+            templateUrl: 'templates/about.html',
+            controller: 'aboutController'
+        })
+})
+    .controller('AppCtrl', function ($scope) {
+        $scope.date = new Date();
+    })
+    .controller('homeController', function ($scope) {
+
+    })
+    .controller('aboutController', function ($scope) {
+
+    });
