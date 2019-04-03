@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Modern World</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../css/parallax.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<nav>
+	<div id="nav-container">
+        <div id="nav-left">
+            <h1><a href="index.html">Modern World</a></h1>
+        </div>
+        <div id="nav-right">
+            <ul>
+                <li><a href="#"><img src="../img/icons/Active-Facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="../img/icons/Active-Twitter-icon.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="../img/icons/Active-YouTube-icon.png" alt="YouTube"></a></li>
+                <li><a href="#"><img src="../img/icons/Active-Google-Plus-icon.png" alt="Google+"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="parallax">
+    <div id="group1" class="parallax__group">
+      <div class="parallax__layer parallax__layer--fore">
+        <div class="title">
+		<!-- TemplateBeginEditable name="TextGroup1" -->
+            <h1>A Little Fable</h1>
+            <h3>by Franz Kafka</h3>
+        <!-- TemplateEndEditable -->
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title"></div>
+      </div>
+    </div>
+    
+    <div id="group2" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+	  	<!-- TemplateBeginEditable name="ImgGroup2" -->
+        <div id="snow-globe"><img src="../img/snow-globe.jpg" alt="snow globe"></div>
+      	<!-- TemplateEndEditable -->
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <div class="title"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--fore">
+        <div class="title">
+		<!-- TemplateBeginEditable name="TextGroup2" -->
+          <p>"Alas," said the mouse, "the whole world is growing smaller every day."</p>
+        <!-- TemplateEndEditable -->
+        </div>
+      </div>
+    </div>
+    
+    <div id="group3" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--fore">
+        <div class="title"><!-- TemplateBeginEditable name="TextGroup3" -->
+          <p>"At the beginning it was so big that I was afraid, I kept running and running, and I was glad when I saw walls far away to the right and left,"</p>
+        <!-- TemplateEndEditable -->
+        </div>
+      </div>
+    </div>
+    
+    <div id="group4" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+	    <!-- TemplateBeginEditable name="ImgGroup4" -->
+        <div id="mouse-pic"><img src="../img/mouse.png"></div>
+      	<!-- TemplateEndEditable -->
+      </div>
+      <div class="parallax__layer parallax__layer--deep">
+        <div class="title"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--fore">
+        <div class="title"><!-- TemplateBeginEditable name="TextGroup4" -->
+          <p>"...but these long walls have narrowed so quickly that I am in the last chamber already,"</p>
+        <!-- TemplateEndEditable -->
+        </div>
+      </div>
+    </div>
+    
+    <div id="group5" class="parallax__group">
+      <div class="parallax__layer parallax__layer--fore">
+        <div class="title">
+		<!-- TemplateBeginEditable name="TextGroup5" -->
+          <p>"...and there in the corner stands the trap that I must run into."</p>
+        <!-- TemplateEndEditable -->
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title"></div>
+      </div>
+    </div>
+    
+    <div id="group6" class="parallax__group">
+      <div class="parallax__layer parallax__layer--fore">
+        <div class="title">
+		<!-- TemplateBeginEditable name="TextGroup6" -->
+          <p>"You only need to change your direction," said the cat, and ate it up.</p>
+        <!-- TemplateEndEditable -->
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--fore">
+        <div id="grin"><img src="../img/grin.jpg" alt="grinning cat"></div>
+      </div>
+    </div>
+    
+    <div id="group7" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">
+        	<ul>
+            	<li><a href="#"><img src="../img/icons/Active-Facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="../img/icons/Active-Twitter-icon.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="../img/icons/Active-YouTube-icon.png" alt="YouTube"></a></li>
+                <li><a href="#"><img src="../img/icons/Active-Google-Plus-icon.png" alt="Google+"></a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

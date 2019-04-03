@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	src: url(../fonts/MYRIADPRO-REGULAR.woff);
+}
+
+body {
+	background-color:#3a3a3a;
+	margin:0;
+	font-family: 'Myriad Pro Regular' !important;
+}
+
+#page-wrapper {
+	margin:0 auto;
+	width:720px;
+}
+
+nav {
+	background-color:#b0b0b0;
+	overflow:auto;
+	padding-top:10px;
+}
+
+nav ul {
+	list-style-type:none;
+	margin:5px auto 0 auto;
+}
+
+#menu li {
+	float:right;
+	width:70px;
+	margin-right:3px;
+	margin-bottom:0;
+	display:inline-block;
+	background:#10fefe;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	padding:3px 8px 3px 8px;
+	text-align:center;
+}
+
+form {
+	display:inline-block;
+}
+
+#menu li a:link, #menu li a:visited {
+	text-decoration:none;
+	color:3a3a3a;
+	margin:0;
+	color:#3a3a3a;
+}
+
+#menu li a:hover, #menu li a:active {
+	color:#ff5f01;
+}
+
+#search {
+	float:left;
+	margin-left:15px;
+	padding-left:0;
+}
+
+#search input{
+	border-radius:8px;
+	background-color:#10fefe;
+	border:none;
+	width:200px;
+	height:20px;
+	color:3a3a3a;
+}
+
+header {
+	background-image:url(../img/large/slider09.jpg);
+}
+
+main {
+	width:100%;
+	overflow:auto;
+	padding:0;
+	border:none;
+}
+
+main h1 {
+	color:#ff5f01;
+}
+
+#tabs {
+	width:100%;
+}
+
+figure {
+	float:left;
+	margin:7px 15px 0 7px;
+}
+
+#overlay{
+	position:absolute;
+	z-index:100;
+	color:white;
+	font-size:2em;
+	font-weight:normal;
+	margin-left:20px;
+	text-shadow: 2px 2px 3px #333;
+}
