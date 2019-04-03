@@ -1,0 +1,336 @@
+@charset "utf-8";
+/*////////////////////////////////////////*/
+/* CSS Document for Bicycle Share website */
+/*////////////////////////////////////////*/
+
+@font-face {
+	font-family: 'Cambria';
+	src: url(../fonts/cambria.woff);
+}
+
+body {
+	margin:0;
+	padding:0;
+	font-family: Cambria;
+}
+
+.effect1 {
+	-webkit-box-shadow: 10px 10px 6px -6px #777;
+	   -moz-box-shadow: 10px 10px 6px -6px #777;
+			box-shadow: 10px 10px 6px -6px #777;
+}
+
+nav {
+	background-color:#22293b;
+	width:100%;
+	color:white;
+	position:fixed;
+	top:0;
+	margin:0;
+	padding:10px;
+	z-index:100;
+}
+
+main {
+	overflow:auto;
+	margin:auto;
+	position:absolute;
+	top:0; left:0; bottom:0; right:0;
+	background-color:#e4ddb3;
+}
+
+ul.nav-left a{
+	color:white;
+	text-decoration:none;
+	font-size:1.5em;
+}
+
+input{
+	border:none;
+}
+
+ul.nav-left {
+	list-style-type:none;
+	float:left;
+	padding:0;
+}
+
+ul.nav-left li {
+	display: inline;
+}
+
+ul.nav-right {
+	list-style-type:none;
+	float:right;
+	padding:0;
+}
+
+ul.nav-right li {
+	display: inline;
+}
+
+main p{
+	margin:2%;
+	text-align:justify;
+}
+
+main h1{
+	margin:4%;
+}
+
+.map{
+	margin:auto;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+
+iframe{
+	width:100%;
+	height:99.41%;
+	border:none;
+}
+
+h1.overlay{
+	position:absolute;
+	z-index:2;
+}
+
+.join{
+	padding:0;
+	width:50%;
+	margin:0 auto;
+}
+
+.join h1{
+	text-align:center;
+	margin-bottom:10%;
+}
+
+.join table{
+	width:100%;
+}
+
+.row1{
+	width:35%;
+}
+
+.row2{
+	width:65%;
+}
+
+.right{
+	text-align:right;
+	padding-right:5%;
+}
+
+.left{
+	text-align:left;
+	width:100%;
+}
+
+td.left input[type="text"], td.left input[type="password"], td.left input[type="tel"], td.left input[type="email"]{
+	width:100%;
+	height:1.4em;
+	margin-bottom:2%;
+}
+
+td.left input[type="submit"], td.left input[type="reset"], .login-form input[type="submit"]{
+	min-width:50%;
+	margin-top:2%;
+	height:2em;
+	border:3px outset #333;
+	font-family: Cambria;
+}
+
+@media (min-width: 981px){
+
+nav {
+	height:60px;
+}
+
+main {
+	width:960px;
+	height:600px;
+}
+
+main p{
+	font-size:1em;
+}
+
+main h1{
+	font-size:2.5em;
+}
+
+.title {
+	font-size:4.75em;
+	margin-left:40px;
+}
+
+.nav-container {
+	width:960px;
+	margin:auto;
+	padding:0;
+	font-size:.75em;
+}
+
+ul.nav-right li {
+	padding-left:30px;
+}
+
+.bike-pic {
+	float:left;
+	margin-left:50px;
+}
+
+.bike-pic img{
+	width:500px;
+	height:300px;
+}
+
+.login-form {
+	float:right;
+	margin-right:100px;
+	margin-top:12px;
+}
+
+.login-form td{
+	height:35px;
+}
+
+.icons {
+	width:40px;
+	height:40px;
+}
+
+.icons-sml{
+	width:30px;
+	height:30px;
+}
+}
+
+@media (min-width: 681px) and (max-width: 980px){
+
+nav {
+	height:40px;
+}
+
+main {
+	width:90%;
+	height:50%;
+	min-height:300px;
+	}
+
+main p{
+	font-size:.85em;
+}
+
+main h1{
+	font-size:2em;
+}
+
+ul.nav-right li {
+	padding-left:30px;
+}
+
+.title {
+	font-size:4em;
+	margin-left:40px;
+}
+
+.bike-pic {
+	float:left;
+	margin-left:30px;
+}
+
+.bike-pic img{
+	width:250px;
+	height:150px;
+}
+
+.login-form {
+	float:right;
+	margin-right:50px;
+	margin-top:12px;
+}
+
+.login-form td{
+	height:35px;
+}
+
+.nav-container{
+	width:90%;
+	margin:0 auto;
+	font-size:.5em;
+}
+
+.icons {
+	width:30px;
+	height:30px;
+}
+
+.icons-sml{
+	width:20px;
+	height:20px;
+}
+}
+
+@media (min-width: 10px) and (max-width: 680px){
+
+nav {
+	height:20px;
+}
+
+main {
+	width:90%;
+	height:50%;
+	min-height:200px;
+	text-align:center;
+}
+
+main p{
+	font-size:.75em;
+}
+
+main h1{
+	font-size:1.5em;
+}
+
+ul.nav-right li {
+	padding-left:10px;
+}
+
+.title {
+	font-size:2em;
+}
+
+.bike-pic img{
+	width:125px;
+	height:75px;
+}
+
+.login-form {
+	display:inline-block;
+	padding-top:25px;
+}
+
+.login-form td{
+	height:25px;
+}
+
+.nav-container{
+	width:90%;
+	margin:0 auto;
+	font-size:.3em;
+}
+
+.icons {
+	width:20px;
+	height:20px;
+}
+
+.icons-sml{
+	width:15px;
+	height:15px;
+}
+}

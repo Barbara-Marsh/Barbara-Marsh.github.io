@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'Janda Apple Cobbler';
+	font-style: normal;
+	font-weight: normal;
+	src:url(../fonts/JandaAppleCobbler.woff);
+}
+
+.demo__info {
+position: absolute;
+
+z-index:100;
+bottom: 1vh;
+top: auto;
+font-size:80%;
+text-align:center;
+width: 100%;
+}
+
+  /* Parallax base styles
+  --------------------------------------------- */
+
+  .parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+
+  .parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  }
+
+
+  /* Debugger styles - used to show the effect
+  --------------------------------------------- */
+
+  .debug {
+    position: fixed;
+    top: 0;
+    left: .5em;
+    z-index: 999;
+    background: rgba(0,0,0,.85);
+    color: #fff;
+    padding: .5em;
+    border-radius: 0 0 5px 5px;
+  }
+  .debug-on .parallax__group {
+    -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
+    transform: translate3d(700px, 0, -800px) rotateY(30deg);
+ }
+  .debug-on .parallax__layer {
+    box-shadow: 0 0 0 2px #000;
+    opacity: 0.9;
+  }
+  .parallax__group {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+  }
+
+
+  /* demo styles
+  --------------------------------------------- */
+
+  body, html {
+    overflow: hidden;
+  }
+
+  body {
+    font-family: 'Janda Apple Cobbler';
+	background:rgba(246, 117, 159, 0.4);
+  }
+
+  * {
+    margin:0;
+    padding:0;
+  }
+
+  .parallax {
+    font-size: 200%;
+  }
+
+   /* centre the content in the parallax layers */
+  .title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+#mouse-pic {
+	text-align: left;
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#snow-globe {
+	text-align: right;
+	position: absolute;
+	left: 80%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index:5000;
+}
+
+#grin {
+	text-align: left;
+	position: absolute;
+	left: 15%;
+	top: 35%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+
+
+  /* style the groups
+  --------------------------------------------- */
+#group2 p, #group3 p, #group4 p, #group5 p, #group6 p, #grou72 p{
+	background:rgba(246, 117, 159, 0.4);
+	border-radius:5px;
+	padding:30px;
+}
+
+#group1 {
+	z-index: 5; /* slide over group 2 */
+	background:url(../img/originals/bg1.jpg);
+}
+
+#group1 .parallax__layer--base {
+	background:url(../img/originals/cover0.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+  
+#group1 .parallax__layer--fore {
+}
+
+#group2 {
+	z-index: 3; /* slide under groups 1 and 3 */
+	background: url(../img/background/small-world.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+  
+#group2 .parallax__layer--back {
+	
+}
+
+#group2 .parallax__layer--base{
+	/*background: url(../img/background/small-world.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;*/
+}
+
+#group3 {
+	z-index: 4; /* slide over group 2 and 4 */
+}
+
+#group3 .parallax__layer--base {
+	background: url(../img/background/walls.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+
+#group4 {
+	z-index: 2; /* slide under group 3 and 5 */
+}
+  
+#group4 .parallax__layer--back {
+	background: url(../img/background/chamber.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+
+#group4 .parallax__layer--deep {
+	/*background: rgb(184,223,101);*/
+}
+
+#group5 {
+	z-index: 3; /* slide over group 4 and 6 */
+}
+
+#group5 .parallax__layer--base {
+	/*background: rgb(214,229,100);*/
+	background: url(../img/background/trap.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+
+#group6 {
+	z-index: 2; /* slide under group 5 and 7 */
+	background:url(../img/background/grinning-kitten.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+
+#group6 .parallax__layer--deep {
+	/*background:url(../img/background/grinning-kitten.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;*/
+}
+
+#group7 {
+	z-index: 3; /* slide over group 7 */
+}
+
+#group7 .parallax__layer--base {
+	
+}
+  
+ul {
+	list-style-type:none;
+}
+
+li {
+	display:inline;
+}
+
+nav {
+	background:rgb(246, 117, 159);
+	width:100%;
+	color:white;
+	position:fixed;
+	top:0;
+	margin:0;
+	padding-top:10px;
+	z-index:100;
+}
+
+#nav-container{
+	width:65%;
+	margin:0 auto;
+}
+
+#nav-left{
+	float:left;
+}
+
+#nav-left a{
+	text-decoration:none;
+	color:white;
+}
+
+#nav-right{
+	float:right;
+}
+
+#nav-right img{
+	height:40px;
+	width:40px;
+}

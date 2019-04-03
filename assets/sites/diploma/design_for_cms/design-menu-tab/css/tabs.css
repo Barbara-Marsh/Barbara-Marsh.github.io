@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ui-tabs-vertical { 
+	width: 55em;
+}
+.ui-tabs-vertical .ui-tabs-nav {
+	padding: .2em .1em .2em .2em;
+	float: left;
+	width: 10em;
+}
+.ui-tabs-vertical .ui-tabs-nav li {
+	clear: left;
+	width: 100%;
+	border-bottom-width: 1px !important;
+	border-right-width: 0 !important;
+	margin: 0 -1px .2em 0;
+}
+.ui-tabs-vertical .ui-tabs-nav li a {
+	display:block;
+}
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+	padding:0;
+	border:none;
+	background-image:none;
+	background-color:#10fefe !important;
+}
+.ui-tabs-vertical .ui-tabs-panel {
+	padding: 1em;
+	float: right;
+	/* width: 40em; */
+}
+
+#tabs {
+	width:720px;
+	border-radius:0;
+	margin-top:0;
+	padding:0;
+	border:none;
+	overflow:hidden;
+}
+
+#tabs ul {
+	width:200px;
+	background-color:#fff;
+	background-image:none;
+	border:none;
+	margin:0 auto;
+	padding:0;
+}
+
+#tabs ul li{
+	width:200px;
+	height:120px;
+	background-image:none;
+	background-color:#b0b0b0;
+	margin:0 auto;
+	text-align:center;
+	line-height:95px;
+}
+
+#tabs-1, #tabs-2, #tabs-3 {
+	overflow:auto;
+	width:500px;
+	padding:6px;
+}
+
+#tabs-1 h1, #tabs-2 h1, #tabs-3 h1 {
+	font-size:2.5em;
+	font-weight:normal;
+	margin:20px;
+	margin-left:0;
+	margin-bottom:10px;
+	padding-left:7px;
+}
+
+#tabs-1 p, #tabs-2 p, #tabs-3 p {
+	font-size:0.75em;
+	padding-left:7px;
+	padding-right:7px;
+}
+
+.ui-state-active {
+	background-image:none;
+	background-color:#10fefe !important;
+	width:200px;
+}
+.ui-tabs-anchor {
+	width:165px;
+	height:105px;
+}
+a[href^="#tab"]:link, a[href^="#tab"]:active {
+	text-decoration:none;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	color:3a3a3a;
+}
+a[href^="#tab"]:hover, a[href^="#tab"]:visited {
+	text-decoration:none;
+	background:#10fefe;
+	border:none;
+	outline:none;
+	cursor:pointer;
+}
+.ui-corner-all {
+	border-bottom-left-radius:0 !important;
+	border-top-left-radius:0 !important;
+	border-top-right-radius:0 !important;
+	border-bottom-right-radius:0 !important;
+}
+.ui-corner-left{
+	border-bottom-left-radius:0 !important;
+	border-top-left-radius:0 !important;
+}

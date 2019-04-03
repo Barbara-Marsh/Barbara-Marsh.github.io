@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html><!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Network Solutions</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="css/animation.css" rel="stylesheet" type="text/css">
+<link href="css/slider.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="jquery-ui-1.11.1.custom/jquery-ui.css">
+<link href="css/tabs.css" rel="stylesheet" type="text/css">
+<link href="css/csspopup.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="jquery-ui-1.11.1.custom/external/jquery/jquery.js"></script>
+<script src="jquery-ui-1.11.1.custom/jquery-ui.js"></script>
+<script>
+$(function() {
+$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+$( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+});
+</script>
+<script src="js/csspopup.js"></script>
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <nav>
+            <ul id="search">
+            	<li><form><input type="text" placeholder="Search"></form></li>
+            </ul>
+            <ul id="menu">
+            	<li><a href="#" onClick="popup('popUpDiv1')">Contact</a></li>
+                <li><a href="#" onClick="popup('popUpDiv2')">Location</a></li>
+                <li><a href="#" onClick="popup('popUpDiv3')">About</a></li>
+            </ul>
+            
+            <!-- Pop-up window "Contact Us" -->
+            <div id="blanket" style="display:none;"></div>
+			<div id="popUpDiv1" style="display:none;">
+				<a href="#" onClick="popup('popUpDiv1')"><img src="img/icon_close.png" alt="close_icon" class="close_icon"></a>
+				<!-- InstanceBeginEditable name="popup1" -->
+				<h1>Contact Us</h1>
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Enter your name"><br>
+                    <select>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                    </select><br>
+                    <input type="radio" name="contact-type" value="Email" />Email<br>
+                    <input type="radio" name="contact-type" value="Phone" />Phone
+                    <textarea name="comments" placeholder="Further details..."></textarea><br><br>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+				<!-- InstanceEndEditable -->
+                </div><!-- End contact us window -->
+            
+            <!-- Pop-up window "Location" -->
+			<div id="blanket" style="display:none;"></div>
+			<div id="popUpDiv2" style="display:none;">
+            	<a href="#" onClick="popup('popUpDiv2')"><img src="img/icon_close.png" alt="close_icon" class="close_icon"></a>
+				<!-- InstanceBeginEditable name="popup2" -->
+            	<h1>Location</h1>
+                <section id="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12609.917883042104!2d144.89739751252057!3d-37.802236901857334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne+VIC!5e0!3m2!1sen!2sau!4v1409372749077"></iframe>
+                </section>
+            	<!-- InstanceEndEditable -->
+                </div><!-- End location window -->
+            
+            <!-- Pop-up window "About" -->
+            <div id="blanket" style="display:none;"></div>
+			<div id="popUpDiv3" style="display:none;">
+            	<a href="#" onClick="popup('popUpDiv3')"><img src="img/icon_close.png" alt="close_icon" class="close_icon"></a>
+				<!-- InstanceBeginEditable name="popup3" -->
+            	<h1>About</h1>
+                <img src="img/content_img.jpg" alt="connected" id="content-image" />
+                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+            	<!-- InstanceEndEditable -->
+                </div> <!-- End about window -->
+        </nav>
+        <header>
+			<div id="overlay">
+            	<h1>Network Solution</h1>
+            </div>
+            <div id="content-slider">
+                <div id="slider">
+                    <div id="mask">
+                    <ul>
+                    <li id="first" class="firstanimation">
+                    <img src="img/large/slider09.jpg" alt="Web"/>
+                    <div class="tooltip">
+                    <h1>World Wide Web</h1>
+                    </div>
+                    </li>
+        
+                    <li id="second" class="secondanimation">
+                    <img src="img/large/slider03.jpg" alt="Social"/>
+                    <div class="tooltip">
+                    <h1>Social Networking</h1>
+                    </div>
+                    </li>
+                    
+                    <li id="third" class="thirdanimation">
+                    <img src="img/large/slider02.jpg" alt="Connected"/>
+                    <div class="tooltip">
+                    <h1>Get Connected</h1>
+                    </div>
+                    </li>
+                                
+                    <li id="fourth" class="fourthanimation">
+                    <img src="img/large/slider05.jpg" alt="Apps"/>
+                    <div class="tooltip">
+                    <h1>Phone Apps</h1>
+                    </div>
+                    </li>
+                                
+                    <li id="fifth" class="fifthanimation">
+                    <img src="img/large/slider04.jpg" alt="Information"/>
+                    <div class="tooltip">
+                    <h1>Information</h1>
+                    </div>
+                    </li>
+                    </ul>
+                    </div>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </header>
+        <main>
+        	<div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Networking</a></li>
+                    <li><a href="#tabs-2">Software</a></li>
+                    <li><a href="#tabs-3">Router</a></li>
+                </ul>
+                <div id="tabs-1">
+				<!-- InstanceBeginEditable name="tab1" -->
+                  <h1>Networking</h1>
+                  <figure> <img src="img/content_img.jpg" alt="connected" /> </figure>
+                  <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                  <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                  <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                <!-- InstanceEndEditable -->
+                </div>
+                <div id="tabs-2">
+				<!-- InstanceBeginEditable name="tab2" -->
+                  <h1>Software</h1>
+                  <figure> <img src="img/content_img.jpg" alt="connected" /> </figure>
+                  <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                  <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                <!-- InstanceEndEditable -->
+                </div>
+                <div id="tabs-3">
+				<!-- InstanceBeginEditable name="tab3" -->
+                  <h1>Router</h1>
+                  <figure> <img src="img/content_img.jpg" alt="connected" /> </figure>
+                  <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                  <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                  <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                <!-- InstanceEndEditable -->
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<!-- InstanceEnd --></html>
